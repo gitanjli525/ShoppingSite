@@ -3,24 +3,32 @@ const navigation = () => {
     {
       title: 'Dashboard',
       path: '/dashboard',
-      icon: 'mdi:email-outline'
+      icon: 'ic:baseline-dashboard'
     },
     {
-      title: 'Home',
-      path: '/home',
-      icon: 'mdi:home-outline'
+      title: 'Products',
+      path: '/products',
+      icon: 'ic:round-shopping-bag'
     },
     {
-      title: 'Second Page',
-      path: '/second-page',
-      icon: 'mdi:email-outline'
+      title: 'Customers',
+      path: '/customers',
+      icon: 'ic:baseline-supervised-user-circle'
     },
     {
-      path: '/acl',
-      action: 'read',
-      subject: 'acl-page',
-      title: 'Access Control',
-      icon: 'mdi:shield-outline'
+      title: 'Orders',
+      path: '/orders/all',
+      icon: 'ic:baseline-shopping-cart'
+    },
+    {
+      title: 'Shipments',
+      path: '/shipments',
+      icon: 'ic:baseline-fire-truck'
+    },
+    {
+      title: 'Transactions',
+      path: '/transactions',
+      icon: 'ic:round-payment'
     }
   ]
 }

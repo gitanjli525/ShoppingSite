@@ -10,12 +10,17 @@ import Spinner from 'src/@core/components/spinner'
 // ** Hook Imports
 import { useAuth } from 'src/hooks/useAuth'
 
-export const getHomeRoute = role => {
+// export const getHomeRoute = role => {
+//   if (role === 'client') return '/acl'
+//   else return '/home'
+// }
+export const getDashboardRoute = role => {
   if (role === 'client') return '/acl'
-  else return '/home'
+  else return '/dashboard'
 }
 
-const Home = () => {
+// const Home = () => {
+const Dashboard = () => {
   // ** Hooks
   const auth = useAuth()
   const router = useRouter()
@@ -26,10 +31,12 @@ const Home = () => {
     }
 
     if (auth.user && auth.user.role) {
-      const homeRoute = getHomeRoute(auth.user.role)
+      // const homeRoute = getHomeRoute(auth.user.role)
+      const dashboardRoute = getDashboardRoute(auth.user.role)
 
       // Redirect user to Home URL
-      router.replace(homeRoute)
+      // router.replace(homeRoute)
+      router.replace(dashboardRoute)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -37,4 +44,5 @@ const Home = () => {
   return <Spinner />
 }
 
-export default Home
+// export default Home
+export default Dashboard

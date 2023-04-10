@@ -128,18 +128,18 @@ const UserDropdown = props => {
             Profile
           </Box>
         </MenuItem>
-        <MenuItem sx={{ p: 0 }} onClick={() => handleDropdownClose()}>
-          <Box sx={styles}>
-            <Icon icon='mdi:email-outline' />
-            Inbox
-          </Box>
-        </MenuItem>
-        <MenuItem sx={{ p: 0 }} onClick={() => handleDropdownClose()}>
-          <Box sx={styles}>
-            <Icon icon='mdi:message-outline' />
-            Chat
-          </Box>
-        </MenuItem>
+          {/* <MenuItem sx={{ p: 0 }} onClick={() => handleDropdownClose()}>
+            <Box sx={styles}>
+              <Icon icon='mdi:email-outline' />
+              Inbox
+            </Box>
+          </MenuItem>
+          <MenuItem sx={{ p: 0 }} onClick={() => handleDropdownClose()}>
+            <Box sx={styles}>
+              <Icon icon='mdi:message-outline' />
+              Chat
+            </Box>
+          </MenuItem> */}
         <Divider />
         <MenuItem sx={{ p: 0 }} onClick={() => handleDropdownClose()}>
           <Box sx={styles}>
@@ -147,7 +147,7 @@ const UserDropdown = props => {
             Settings
           </Box>
         </MenuItem>
-        <MenuItem sx={{ p: 0 }} onClick={() => handleDropdownClose()}>
+        {/* <MenuItem sx={{ p: 0 }} onClick={() => handleDropdownClose()}>
           <Box sx={styles}>
             <Icon icon='mdi:currency-usd' />
             Pricing
@@ -158,7 +158,7 @@ const UserDropdown = props => {
             <Icon icon='mdi:help-circle-outline' />
             FAQ
           </Box>
-        </MenuItem>
+        </MenuItem> */}
         <Divider />
         <MenuItem
           onClick={handleLogout}
